@@ -1,0 +1,8 @@
+﻿  Main.cpp
+C:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(17,29): warning C5051: attribute 'likely' requires at least '/std:c++20'; ignored
+C:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(86,29): warning C5051: attribute 'likely' requires at least '/std:c++20'; ignored
+C:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(68,26): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(66): message : while compiling class template member function 'void Day1::KMax<long,3>::pushStack(size_t)'
+C:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(50): message : see reference to function template instantiation 'void Day1::KMax<long,3>::pushStack(size_t)' being compiled
+C:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(79): message : see reference to class template instantiation 'Day1::KMax<long,3>' being compiled
+  Advent-Of-Code-2022.vcxproj -> C:\Users\Kit\source\repos\Advent-Of-Code-2022\Debug\Advent-Of-Code-2022.exe
