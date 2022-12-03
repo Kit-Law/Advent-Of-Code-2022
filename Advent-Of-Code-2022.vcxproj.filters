@@ -21,10 +21,14 @@
     <ClInclude Include="Src\Day-2\Day2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Day-3\Day3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />
     <Text Include="Input\Day2.txt" />
+    <Text Include="Input\Day3.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp">
