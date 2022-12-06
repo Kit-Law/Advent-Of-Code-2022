@@ -139,12 +139,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Src\Day-1\Day1.h" />
-    <ClInclude Include="Src\Day-2\Day2.h" />
-    <ClInclude Include="Src\Day-3\Day3.h" />
-    <ClInclude Include="Src\Day-4\Day4.h" />
-    <ClInclude Include="Src\Day-5\Day5.h" />
-    <ClInclude Include="Src\Day-6\Day6.h" />
+    <ClInclude Include="Src\Days\Day1.h" />
+    <ClInclude Include="Src\Days\Day10.h" />
+    <ClInclude Include="Src\Days\Day11.h" />
+    <ClInclude Include="Src\Days\Day12.h" />
+    <ClInclude Include="Src\Days\Day13.h" />
+    <ClInclude Include="Src\Days\Day14.h" />
+    <ClInclude Include="Src\Days\Day15.h" />
+    <ClInclude Include="Src\Days\Day16.h" />
+    <ClInclude Include="Src\Days\Day17.h" />
+    <ClInclude Include="Src\Days\Day18.h" />
+    <ClInclude Include="Src\Days\Day19.h" />
+    <ClInclude Include="Src\Days\Day2.h" />
+    <ClInclude Include="Src\Days\Day20.h" />
+    <ClInclude Include="Src\Days\Day21.h" />
+    <ClInclude Include="Src\Days\Day22.h" />
+    <ClInclude Include="Src\Days\Day23.h" />
+    <ClInclude Include="Src\Days\Day24.h" />
+    <ClInclude Include="Src\Days\Day25.h" />
+    <ClInclude Include="Src\Days\Day3.h" />
+    <ClInclude Include="Src\Days\Day4.h" />
+    <ClInclude Include="Src\Days\Day5.h" />
+    <ClInclude Include="Src\Days\Day6.h" />
+    <ClInclude Include="Src\Days\Day7.h" />
+    <ClInclude Include="Src\Days\Day8.h" />
+    <ClInclude Include="Src\Days\Day9.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />
