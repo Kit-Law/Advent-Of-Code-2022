@@ -1,22 +1,38 @@
 #include <iostream>
 
-#include "Day-1/Day1.h"
-#include "Day-2/Day2.h"
-#include "Day-3/Day3.h"
-#include "Day-4/Day4.h"
-#include "Day-5/Day5.h"
-#include "Day-6/Day6.h"
+#include "Days/Day1.h"
+#include "Days/Day2.h"
+#include "Days/Day3.h"
+#include "Days/Day4.h"
+#include "Days/Day5.h"
+#include "Days/Day6.h"
+#include "Days/Day7.h"
+#include "Days/Day8.h"
+#include "Days/Day9.h"
+#include "Days/Day10.h"
+#include "Days/Day11.h"
+#include "Days/Day12.h"
+#include "Days/Day13.h"
+#include "Days/Day14.h"
+#include "Days/Day15.h"
+#include "Days/Day16.h"
+#include "Days/Day17.h"
+#include "Days/Day18.h"
+#include "Days/Day19.h"
+#include "Days/Day20.h"
+#include "Days/Day21.h"
+#include "Days/Day22.h"
+#include "Days/Day23.h"
+#include "Days/Day24.h"
+#include "Days/Day25.h"
+
+#define SOLUTION(day) std::cout << #day << ": Star 1 = " << day::star1("Input/" #day ".txt") << ", Star 2 = " << day::star2("Input/" #day ".txt") << std::endl;
 
 int main()
 {
 	try
 	{
-		//std::cout << "Day 1: Star 1 = " << Day1::star1("Input/Day1.txt") << ", Star 2 = " << Day1::star2("Input/Day1.txt") << std::endl;
-		//std::cout << "Day 2: Star 1 = " << Day2::star1("Input/Day2.txt") << ", Star 2 = " << Day2::star2("Input/Day2.txt") << std::endl;
-		//std::cout << "Day 3: Star 1 = " << Day3::star1("Input/Day3.txt") << ", Star 2 = " << Day3::star2("Input/Day3.txt") << std::endl;
-		//std::cout << "Day 4: Star 1 = " << Day4::star1("Input/Day4.txt") << ", Star 2 = " << Day4::star2("Input/Day4.txt") << std::endl;
-		//std::cout << "Day 5: Star 1 = " << Day5::star1("Input/Day5.txt") << ", Star 2 = " << Day5::star2("Input/Day5.txt") << std::endl;
-		std::cout << "Day 6: Star 1 = " << Day6::star1("Input/Day6.txt") << ", Star 2 = " << Day6::star2("Input/Day6.txt") << std::endl;
+		SOLUTION(Day7)
 	}
 	catch (std::exception& e)
 	{
