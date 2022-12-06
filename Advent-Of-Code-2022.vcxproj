@@ -144,6 +144,7 @@
     <ClInclude Include="Src\Day-3\Day3.h" />
     <ClInclude Include="Src\Day-4\Day4.h" />
     <ClInclude Include="Src\Day-5\Day5.h" />
+    <ClInclude Include="Src\Day-6\Day6.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />
@@ -151,6 +152,7 @@
     <Text Include="Input\Day3.txt" />
     <Text Include="Input\Day4.txt" />
     <Text Include="Input\Day5.txt" />
+    <Text Include="Input\Day6.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp" />

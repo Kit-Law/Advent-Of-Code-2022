@@ -30,6 +30,9 @@
     <ClInclude Include="Src\Day-5\Day5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Day-6\Day6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />
@@ -37,6 +40,7 @@
     <Text Include="Input\Day3.txt" />
     <Text Include="Input\Day4.txt" />
     <Text Include="Input\Day5.txt" />
+    <Text Include="Input\Day6.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp">

@@ -1,4 +1,8 @@
 ﻿  Main.cpp
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(17,29): warning C5051: attribute 'likely' requires at least '/std:c++20'; ignored
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-1\Day1.h(86,29): warning C5051: attribute 'likely' requires at least '/std:c++20'; ignored
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-6\Day6.h(24,4): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-6\Day6.h(34,4): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-6\Day6.h(55,4): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Day-6\Day6.h(65,4): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Advent-Of-Code-2022.vcxproj -> D:\Users\Kit\source\repos\Advent-Of-Code-2022\x64\Debug\Advent-Of-Code-2022.exe
