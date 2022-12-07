@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -167,11 +168,30 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />
+    <Text Include="Input\Day10.txt" />
+    <Text Include="Input\Day11.txt" />
+    <Text Include="Input\Day12.txt" />
+    <Text Include="Input\Day13.txt" />
+    <Text Include="Input\Day14.txt" />
+    <Text Include="Input\Day15.txt" />
+    <Text Include="Input\Day16.txt" />
+    <Text Include="Input\Day17.txt" />
+    <Text Include="Input\Day18.txt" />
+    <Text Include="Input\Day19.txt" />
     <Text Include="Input\Day2.txt" />
+    <Text Include="Input\Day20.txt" />
+    <Text Include="Input\Day21.txt" />
+    <Text Include="Input\Day22.txt" />
+    <Text Include="Input\Day23.txt" />
+    <Text Include="Input\Day24.txt" />
+    <Text Include="Input\Day25.txt" />
     <Text Include="Input\Day3.txt" />
     <Text Include="Input\Day4.txt" />
     <Text Include="Input\Day5.txt" />
     <Text Include="Input\Day6.txt" />
+    <Text Include="Input\Day7.txt" />
+    <Text Include="Input\Day8.txt" />
+    <Text Include="Input\Day9.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp" />
