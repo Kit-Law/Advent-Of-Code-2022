@@ -32,7 +32,7 @@ int main()
 {
 	try
 	{
-		SOLUTION(Day10)
+		SOLUTION(Day12)
 	}
 	catch (std::exception& e)
 	{
