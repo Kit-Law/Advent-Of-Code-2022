@@ -8,14 +8,13 @@ D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day6.h(65,4): warning C42
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day7.h(99,34): warning C5051: attribute 'unlikely' requires at least '/std:c++20'; ignored
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day9.h(109,37): warning C4267: 'return': conversion from 'size_t' to 'long', possible loss of data
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day9.h(137,37): warning C4267: 'return': conversion from 'size_t' to 'long', possible loss of data
-D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(41,1): warning C4244: '/=': conversion from 'float' to '_Ty', possible loss of data
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(43,1): warning C4244: '/=': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=uint64_t
           ]
-D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(98,9): warning C4101: 'opcode': unreferenced local variable
-D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(98,21): warning C4101: 'oparand': unreferenced local variable
-D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(158,30): warning C4244: 'return': conversion from 'uint64_t' to 'long', possible loss of data
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(105,9): warning C4101: 'opcode': unreferenced local variable
+D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day11.h(105,21): warning C4101: 'oparand': unreferenced local variable
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day9.h(43,12): warning C4244: 'initializing': conversion from 'long' to 'short', possible loss of data
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day9.h(42): message : while compiling class template member function 'void Day9::Rope<10>::moveTail(size_t)'
 D:\Users\Kit\source\repos\Advent-Of-Code-2022\Src\Days\Day9.h(35): message : see reference to function template instantiation 'void Day9::Rope<10>::moveTail(size_t)' being compiled

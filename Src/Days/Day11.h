@@ -22,7 +22,9 @@ namespace Day11 {
 		int trueMonkey;
 		int falseMonkey;
 
-		long inspectedCount = 0;
+		int inspectedCount = 0;
+
+		long* lcm;
 	public:
 		inline void inspectNextItem(float worryRelif = 3.0f) 
 		{ 
@@ -39,6 +41,8 @@ namespace Day11 {
 
 			if (worryRelif != 1.0f)
 				items.front() /= worryRelif;
+			else
+				items.front() = items.front() % *lcm;
 		}
 
 		inline int passToMonkey()
@@ -69,13 +73,16 @@ namespace Day11 {
 
 		inline std::queue<uint64_t> getItems() { return items; };
 
-		inline long getInspectedCount() { return inspectedCount; };
+		inline int getInspectedCount() { return inspectedCount; };
+
+		inline void setLCM(long* lcm) { this->lcm = lcm; }
 	};
 
 	class MonkeyMastermind
 	{
 	private:
 		std::vector<Monkey*> monkeys;
+		long lcm = 1;
 	public:
 		MonkeyMastermind(const char* path)
 		{
@@ -104,6 +111,9 @@ namespace Day11 {
 				std::getline(input, buffer);
 				sscanf_s(buffer.c_str(), "    If false: throw to monkey %d", monkeys.back()->getFalseMonkey());
 				std::getline(input, buffer);
+
+				lcm *= *monkeys.back()->getTest();
+				monkeys.back()->setLCM(&lcm);
 			}
 		}
 
@@ -138,27 +148,30 @@ namespace Day11 {
 			}
 		}
 
-		inline uint64_t getMonkeyBusiness()
+		inline unsigned long long getMonkeyBusiness()
 		{
-			std::vector<long> businessLevels;
+			std::vector<int> businessLevels;
 			for (Monkey* monkey : monkeys)
 				businessLevels.push_back(monkey->getInspectedCount());
-			std::sort(businessLevels.begin(), businessLevels.end(), [](long& a, long& b) { return a > b; });
-			return businessLevels[0] * businessLevels[1];
+			std::sort(businessLevels.begin(), businessLevels.end(), [](int& a, int& b) { return a > b; });
+			return (unsigned long long)businessLevels[0] * (unsigned long long)businessLevels[1];
 		}
 	};
 
-	inline long star1(const char* path) noexcept
+	inline unsigned long long star1(const char* path) noexcept
 	{
 		MonkeyMastermind mm(path);
 
 		for (int i = 0; i < 20; i++)
+		{
 			mm.preformRound();
+			//mm.outputRound();
+		}
 
 		return mm.getMonkeyBusiness();
 	}
 
-	inline uint64_t star2(const char* path) noexcept
+	inline unsigned long long star2(const char* path) noexcept
 	{
 		MonkeyMastermind mm(path);
 
