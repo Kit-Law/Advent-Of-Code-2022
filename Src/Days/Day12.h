@@ -36,9 +36,9 @@ namespace Day12 {
 	{
 	private:
 		std::vector<std::vector<Node*>> nodes;
-		std::vector<std::pair<std::vector<Node*>, Path>*> deapestNodeSets;
+		std::pair<std::vector<Node*>, Path> deapestNodeSet;
 	public:
-		Graph(const char* path, char startingPoint = 'S')
+		Graph(const char* path, char endPoint = 'E')
 		{
 			std::string buffer;
 			std::fstream input(path);
@@ -48,11 +48,11 @@ namespace Day12 {
 				for (char letter : buffer)
 				{
 					nodeLine.push_back(new Node(letter));
-					if (nodeLine.back()->letter == startingPoint)
+					if (nodeLine.back()->letter == endPoint)
 					{
 						std::vector<Node*> root;
 						root.push_back(nodeLine.back());
-						deapestNodeSets.push_back(new std::pair<std::vector<Node*>, Path>(root, Path(nodeLine.back())));
+						deapestNodeSet = std::pair<std::vector<Node*>, Path>(root, Path(nodeLine.back()));
 					}
 				}
 				nodes.push_back(nodeLine);
@@ -61,31 +61,24 @@ namespace Day12 {
 			constructEdges();
 		}
 
-		inline bool nextDepth()
+		inline bool nextDepth(char startingPoint = 'S')
 		{
-			for (std::pair<std::vector<Node*>, Path>* deapestNodes : deapestNodeSets)
-			{
-				std::vector<Node*> nextDeapestNodes;
+			std::vector<Node*> nextDeapestNodes;
 				
-				for (Node* node : deapestNodes->first)
-				{
-					if (node->letter == 'E')
-						return true;
-					else
-						for (Node* edge : node->edges)
+			for (Node* node : deapestNodeSet.first)
+				if (node->letter == startingPoint)
+					return true;
+				else
+					for (Node* edge : node->edges)
+						if (((node->letter == 'E' && edge->letter == 'z') || (edge->letter + 1 >= node->letter && node->letter != 'E') ||
+							(edge->letter == startingPoint && node->letter == 'a')) && !deapestNodeSet.second.visited(edge))
 						{
-							if ((node->letter == 'S' || (edge->letter <= node->letter + 1 && edge->letter != 'E') ||
-								(edge->letter == 'E' && node->letter == 'z')) && !deapestNodes->second.visited(edge))
-							{
-								nextDeapestNodes.push_back(edge);
-								deapestNodes->second.visitNode(edge);
-							}
+							nextDeapestNodes.push_back(edge);
+							deapestNodeSet.second.visitNode(edge);
 						}
-				}
-
-				deapestNodes->first.clear();
-				deapestNodes->first = nextDeapestNodes;
-			}
+				
+			deapestNodeSet.first = nextDeapestNodes;
+		
 			return false;
 		}
 	private:
@@ -116,8 +109,8 @@ namespace Day12 {
 	{
 		long depth = 0;
 
-		Graph graph(path, 'a');
-		while (!graph.nextDepth()) { depth++; }
+		Graph graph(path);
+		while (!graph.nextDepth('a')) { depth++; }
 
 		return depth;
 	}
